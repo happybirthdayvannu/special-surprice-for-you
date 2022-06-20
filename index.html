@@ -10,12 +10,6 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
   
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementsByClassName("audio").play()
-    });
-  </script>
-  
   <style type="text/css" >
     
     .audio{
@@ -186,7 +180,11 @@
   <audio class="audio" autoplay loop>
     <source src="hbd1.mp3" type="audio/mp3"/>
   </audio>
-  
+  <script>
+    window.onLoad = () => {
+      document.getElementsByClassName("audio").play()
+    }
+  </script>
 </body>
 
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
