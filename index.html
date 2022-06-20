@@ -10,6 +10,12 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
   
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementsByClassName("audio").play()
+    });
+  </script>
+  
   <style type="text/css" >
     
     .audio{
@@ -177,7 +183,7 @@
   </div>
   </div>
   
-  <audio controls autoplay loop>
+  <audio class="audio" controls autoplay loop>
     <source src="hbd1.mp3" type="audio/mp3"/>
   </audio>
   
